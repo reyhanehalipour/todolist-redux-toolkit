@@ -11,7 +11,7 @@ export default function Donbox() {
   const todoList = useSelector((state) => state.todo.todoList);
 
   const sortToDoList = todoList.filter((todo) => todo.completed == true)
-  console.log(sortToDoList)
+
 
   const dispatch = useDispatch();
   
