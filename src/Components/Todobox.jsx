@@ -4,6 +4,8 @@ import { useDispatch, useSelector } from "react-redux";
 import { TiPencil } from "react-icons/ti";
 import { BsTrash } from "react-icons/bs";
 
+
+
 import {
   setTodoList,
   addTodo,
@@ -73,6 +75,8 @@ export default function Todobox() {
 
   };
 
+  
+
   return (
     <>
     <div>
@@ -125,7 +129,8 @@ export default function Todobox() {
             <div className="fixed w-full left-0 top-0 h-full
              bg-transparentBlack flex items-center justify-center">
                <div className="bg-white p-8 rounded-md">
-              
+                <form >
+
                     <input className="border p-2 rounded-md outline-none mb-8 ml-8"
                        value={newTask}
                        onChange={(e) => setNewTask(e.target.value)}
@@ -149,6 +154,7 @@ export default function Todobox() {
                               Cancel
                            </button>
                        </div> 
+                     
         ) : (
           <>
                  <button className="bg-red-600 rounded-md text-white py-3 px-9 ml-4"
@@ -165,7 +171,7 @@ export default function Todobox() {
         )}
       </div>
    
-    
+    </form>
     </div>
   </div>
       )}
