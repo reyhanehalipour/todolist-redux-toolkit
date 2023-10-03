@@ -58,7 +58,8 @@ export default function Todobox() {
       alert("Please enter a task");
     } else {
       dispatch(updateTodo({ task: task, id: id }));
-     
+      setNewTask('')
+      setCurrentTodo(null)
       setShowModal(false);
      
       
